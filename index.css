@@ -1,0 +1,46 @@
+* {
+    font-family: serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(132, 160, 234, 0.8);
+    width: 30%;
+    margin: 40px auto 50px;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+ {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.tag {
+    font-family: monospace;
+    background-color:antiquewhite;
+}
+
+.tables {
+    width: 50%;
+    margin: auto;
+}
+
+table {
+    border: 2px solid lightskyblue;
+    width: 100%;
+}
+
+thead {
+    line-height: 1.6;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(132, 160, 234, 0.8);
+    color: white;
+}
+
+td {
+    border: 1px solid whitesmoke;
+}
