@@ -1,82 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Website Styling</title>
-    <link href="index.css" type="text/css" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/index.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Lato:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+
+    <!--Navigation Bar-->
     <header>
-      <h1>My Website Style Template</h1>
+        <div class="bar">
+            <div id="logo">
+                <h2>LOGO</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href='#'>Nav</a></li>
+                    <li><a href='#'>Nav</a></li>
+                    <li><a href='#'>Nav</a></li>
+                    <li><a href='#'>Nav</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="color">
-        <h2>Colours</h2>
-        <div class="colorblocks">
-            <ol>
-                <li class="color1">
-                  <p>Dark Mint</p>
-                  <p>rgb(77, 229, 196)</p>
-                </li>
-                <li class="color2">
-                    <p>Light Mint</p>
-                    <p>rgb(169, 255, 232)</p>
-                </li>
-                <li class="color3">
-                    <p>Pale Sky</p>
-                    <p>rgb(178, 228, 241)</p>
-                </li>
-                <li class="color4">
-                    <p>Night Sky</p>
-                    <p>rgb(11, 27, 29)</p>
-                </li>
-                <li class="color5">
-                    <p>White Cloud</p>
-                    <p>rgb(236, 254, 255)</p>
-                </li>
-                <li class="color6">
-                    <p>Storm</p>
-                    <p>rgb(82, 82, 82)</p>
-                </li>
-            </ol>
-        </div>
-    </section>
-    <section class="font">
-        <h2>Fonts</h2>
-        <div class="poppins">
-            <h3>Poppins</h3>
-            <p id="poppins">Learning about typography is cool.</p>
-            <p id="poppinsbold">Learning about typography is cool.</p>
-            <p id="poppinsitalic">Learning about typography is cool.</p>
-        </div>
-        <div class="IBM">
-            <h3>IBM Plex Serif</h3>
-            <p id="IBM">Learning about typography is cool.</p>
-            <p id="IBMbold">Learning about typography is cool.</p>
-            <p id="IBMitalic">Learning about typography is cool.</p>
-        </div>
-    </section>
-    <section class="text styles">
-        <h2>Text Styles</h2>
-    </section>
-    <section class="TextStyles">
-        <h1>H1: Main Page Heading</h1>
-        <ul>
-            <li>Font-family: 'Poppins', sans-serif</li>
-            <li>Font-weight: 600</li>
-            <li>Font-size: 36px</li>
-        </ul>
-        <h2>H2: Subheading</h2>
-        <ul>
-            <li>Font-family: 'Poppins', sans-serif</li>
-            <li>Font-weight: 300</li>
-            <li>Font-size: 26px</li>
-        </ul>
-        <p>P: Paragraph Text</p>
-        <ul>
-            <li>Font-family: 'IBM Plex Serif', serif</li>
-            <li>Font-weight: 300</li>
-            <li>Font-size: 16px</li>
-        </ul>
-    </section>
+
+    <main>
+        <!--Title Banner-->
+        <section class="banner">
+            <div class="bannercontent">
+                <h1>Website Template</h1>
+            </div>
+        </section>
+
+        <!--New Section-->
+        <section class="box1">
+            <p class="fascinate">I love typography.</p>
+            <p class="lato">Typography is cool.</p>
+            <p class="latobold">Really cool.</p>
+        </section>
+
+        <!--New Section-->
+        <section class="box2">
+            <div class="polaroid">
+                <div class="imgcontainer1">
+                    <img src="./resources/images/skiing1.jpeg" />
+                </div>
+                <div class='caption'>
+                    <p>Once upon a time I went skiing. I was really good at it.</p> 
+                </div>
+            </div>
+        </section>
+
+        <!--New Section-->
+        <section class="box3">
+            <h4>HEY JACK</h4>
+           <div class="higiphy">
+            <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/ASd0Ukj0y3qMM" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Hire me for all your web developing needs now: eloiseweeks@hotmail.com</p>
+        </footer>
+    </main>
+
 </body>
 </html>
