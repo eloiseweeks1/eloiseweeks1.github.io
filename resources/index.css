@@ -171,6 +171,7 @@ main {
     height: 70%;
     display:flex;
     justify-items: center;
+    display: block;
 }
 
 .box2 .polaroid img {
