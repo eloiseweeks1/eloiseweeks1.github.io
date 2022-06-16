@@ -1,0 +1,266 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+header {
+    width:100%;
+    height: 9rem;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: aliceblue;
+}
+
+header .bar {
+    box-sizing: border-box;
+    margin: 0 1rem;
+    display: flex;
+    height: 100%;
+    align-items:center;
+
+}
+
+.bar #logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#logo h2 {
+    margin-left: 10%;
+}
+
+.bar nav {
+    flex: 2 0 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar nav ul {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bar nav ul li {
+    display:inline-flex;
+    border: 2px solid black;
+    height: 3rem;
+    flex: 1 1 5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    background-color: rgba(41, 138, 119, 0.92);
+    max-width: 9rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.1rem 0.3rem;
+}
+
+.bar a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.bar li:hover {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    background-color: rgb(83, 89, 131)
+}
+
+.bar li:active {
+    box-shadow: 0px 0px;
+    position: relative;
+    top: 0.3rem;
+    left: 0.1rem;
+}
+
+main {
+    margin-top: 9rem;
+    display: grid;
+    grid-template-areas: "banner banner"
+                         "box1 box2"  
+                         "box3 box3"
+                         "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20rem 30rem 20rem 5rem;
+}
+
+/* Title Banner */
+.banner {
+    grid-area: banner;
+    background-image: url('./images/beach.jpg');
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannercontent {
+    background-color: azure;
+    width:100%;
+    text-align: center;
+    opacity: 50%;
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: rgb(199, 253, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+}
+
+.fascinate {
+    font-family: 'Fascinate', cursive;
+    font-size: 1.4rem;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+
+.latobold {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-style: italic;  
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 .polaroid {
+
+    max-width: 85%;
+    height: 80%;
+    overflow: hidden;
+    display:flex;
+    background-color: white;
+    flex-direction: column;
+    border: 0.5rem dashed white;
+    justify-content: space-between;
+}
+
+.box2 .polaroid .imgcontainer1 {
+    align-self: center;
+    justify-self: flex-start;
+    width: 100%;
+    height: 70%;
+    display:flex;
+    justify-items: center;
+}
+
+.box2 .polaroid img {
+    max-width: 95%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    transform: rotate(0deg);
+    top:1rem;
+    align-self: center;
+    justify-self: center;
+    margin: 1rem auto 0;
+    border-radius: 50%;
+
+}
+
+.box2 .polaroid .caption {
+    background-color: blanchedalmond;
+    border: 1px solid white;
+    z-index: 99;
+    padding: 0.3rem 1rem;
+    max-width:100%;
+    margin: 0.5rem 0.5rem;
+}
+
+.caption p {
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: rgba(41, 138, 119, 0.92);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3 .higiphy {
+    width:40%;
+    height: auto;
+    max-height: 90%;
+    overflow: hidden;
+}
+
+.box3 h4 {
+    background-color: white;
+    padding: 1rem;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin: 0 2rem;
+}
+
+
+footer {
+    grid-area: footer;
+    display:flex;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .bar nav {
+        display: none;
+    }
+    .bar #logo {
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    #logo h2 {
+        margin-left: 0;
+    }
+    .box1 p{
+        text-align:center;
+    }
+    footer p {
+        text-align: center;
+    }
+    .box3 .higiphy {
+        width: 30rem;
+    }
+    .box3 h4 {
+        display:none;
+    }
+}
